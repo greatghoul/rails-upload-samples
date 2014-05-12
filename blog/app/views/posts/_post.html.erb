@@ -1,0 +1,6 @@
+<%= content_tag_for :div, post do %>
+  <%= post.content %><br />
+  <%- url = post_picture_url(post.picture) %>
+  <%= link_to url, url %><br />
+  <%= image_tag url %>
+<% end %>
