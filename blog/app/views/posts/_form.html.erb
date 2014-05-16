@@ -17,7 +17,8 @@
   </div>
   <div class="field">
     <%= f.label :picture %><br>
-    <%= f.file_field :picture %>
+    <div id="dnd-area"></div>
+    <%= f.file_field :picture, class: 'hide' %>
   </div>
   <div class="actions">
     <%= f.submit %>

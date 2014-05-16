@@ -16,3 +16,13 @@ form {
   padding: 10px 20px;
   margin-top: 5px;
 }
+
+#dnd-area {
+  min-height: 200px;
+  background: #e1eaf8;
+  border: 3px dashed #9fbde9;
+
+  &.dragover {
+    background: #c0d3f0;
+  }
+}
