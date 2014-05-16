@@ -1,4 +1,6 @@
-<%= form_for(@post, multipart: true) do |f| %>
+<iframe src="about:blank" id="upload_frame" name="upload_frame" style="display: none;"></iframe>
+
+<%= form_for(@post, html: { multipart: true, target: "upload_frame" }) do |f| %>
   <% if @post.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>

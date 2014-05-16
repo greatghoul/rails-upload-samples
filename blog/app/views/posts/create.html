@@ -1,0 +1,4 @@
+<script type="text/javascript">
+  parent.$('#posts').prepend('<%= j(render partial: 'post', object: @post) %>');
+  parent.$('form').reset();
+</script>
