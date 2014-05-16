@@ -13,11 +13,9 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       if @post.save
-        format.html { redirect_to posts_path, notice: 'Post was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @post }
+        format.html { render partial: 'post', object: @post }
       else
         format.html { render action: 'index' }
-        format.json { render json: @post.errors, status: :unprocessable_entity }
       end
     end
   end

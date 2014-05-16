@@ -6,11 +6,6 @@ body {
   padding: 0;
 }
 
-form {
-  background: #f2f6fc;
-  padding: 10px 20px;
-}
-
 .post {
   background: #fafcfe;
   padding: 10px 20px;
@@ -18,9 +13,14 @@ form {
 }
 
 #dnd-area {
-  min-height: 200px;
+  margin: 10px 20px;
+  min-height: 100px;
   background: #e1eaf8;
   border: 3px dashed #9fbde9;
+  text-align: center;
+  font-size: 40px;
+  line-height: 100px;
+  color: #9fbde9;
 
   &.dragover {
     background: #c0d3f0;

@@ -15,9 +15,22 @@ $ ->
 
   $('#dnd-area').on 'drop', (evt) ->
     evt.preventDefault()
-    alert(1)
     @className = ''
     files = event.dataTransfer.files
-    console.log(files)
+    formData = new FormData()
+    formData.append('post[picture]', files[0])
+
+    $.ajax
+      url: '/posts',
+      method: 'POST'
+      data: formData,
+      processData: false,
+      contentType: false,
+      success: (html) ->
+        document.location.reload(true)
+        $('#post').prepend(html)
+      error: (evt) ->
+        alert('上传错误')
+
     false
 
