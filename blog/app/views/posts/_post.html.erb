@@ -1,0 +1,5 @@
+<%= content_tag_for :div, post do %>
+  <%= post.content %><br />
+  <%= link_to post.picture.url, post.picture.url %><br />
+  <%= image_tag post.picture.url if post.picture? %>
+<% end %>
