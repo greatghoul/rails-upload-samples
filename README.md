@@ -1,5 +1,1 @@
-使用 CarrierWave 实现文件上传
-
-## 参考资料：
-
-- <https://github.com/carrierwaveuploader/carrierwave>
+利用隐藏 IFrame 实现无刷新上传
