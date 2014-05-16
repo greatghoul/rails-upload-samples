@@ -3,7 +3,7 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @post = Post.new
-    @posts = Post.order(created_at: :desc).all
+    @posts = Post.order(created_at: :desc)
   end
 
   # POST /posts
