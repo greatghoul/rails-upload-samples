@@ -27,8 +27,7 @@ $ ->
       processData: false,
       contentType: false,
       success: (html) ->
-        document.location.reload(true)
-        $('#post').prepend(html)
+        $('#posts').prepend(html)
       error: (evt) ->
         alert('上传错误')
 
