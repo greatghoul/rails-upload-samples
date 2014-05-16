@@ -16,12 +16,10 @@
     <%= f.text_area :content %>
   </div>
 
-  <%= f.fields_for :pictures do |pf| %>
   <div class="field">
-    <%= pf.label :picture %><br>
-    <%= pf.file_field :picture, multiple: true, name: 'post[pictures_attributes][][picture]' %>
+    <%= f.label :picture %><br>
+    <%= f.file_field :picture, multiple: true, name: 'post[pictures_attributes][][picture]' %>
   </div>
-  <% end %>
 
   <div class="actions">
     <%= f.submit %>

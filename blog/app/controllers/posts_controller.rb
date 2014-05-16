@@ -3,8 +3,7 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @post = Post.new
-    @post.pictures.build
-    @posts = Post.order(created_at: :desc).includes(:pictures).load
+    @posts = Post.order(created_at: :desc).includes(:pictures)
   end
 
   # POST /posts
