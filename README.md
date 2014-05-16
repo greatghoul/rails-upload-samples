@@ -11,4 +11,4 @@ Rails 文件上传示例
 - [carrierwave 文件上传](https://github.com/greatghoul/rails-upload-samples/tree/carrierwave-upload)
 - [carrierwave 批量上传](https://github.com/greatghoul/rails-upload-samples/tree/carrierwave-multiple-upload)
 - [HTML 拖拽上传](https://github.com/greatghoul/rails-upload-samples/tree/html5-dnd-upload)
-- [伪异步文件上传]()
+- [伪异步文件上传](https://github.com/greatghoul/rails-upload-samples/tree/norefresh-upload-via-hidden-iframe)
