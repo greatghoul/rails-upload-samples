@@ -1,9 +1,7 @@
 原生 Rails 实现文件上传
 -----------------------
 
-## 上传的最经典方式
-
-Read and Write, 低碳环保
+上传的最经典方式，Read-Write, 低碳环保
 
 ### 设置表单的数据类型
 
@@ -24,6 +22,8 @@ Read and Write, 低碳环保
       file.write(uploaded_io.read)
     end
 
-## 参考资料
+----
+
+参考资料
 
 - http://guides.rubyonrails.org/form_helpers.html#uploading-files
